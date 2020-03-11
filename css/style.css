@@ -993,9 +993,7 @@ body{
 }
 
 svg {
-    display: block;
     font: 6.5em 'Montserrat';
-    width: 200px;
     margin: 0 auto;
 }
 
