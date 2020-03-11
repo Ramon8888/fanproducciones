@@ -1020,7 +1020,7 @@ svg {
 }
 
 .text-copy:nth-child(3){
-	stroke: #BD0034;
+	stroke: blue;
 	animation-delay: -3s;
 }
 
@@ -1030,7 +1030,7 @@ svg {
 }
 
 .text-copy:nth-child(5){
-	stroke: #FDB731;
+	stroke: white;
 	animation-delay: -5s;
 }
 
