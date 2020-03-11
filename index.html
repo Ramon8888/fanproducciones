@@ -24,7 +24,6 @@
 
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/style.scss" rel="stylesheet">
 
     <!-- =======================================================
     Theme Name: Regna
@@ -32,39 +31,7 @@
     Author: BootstrapMade.com
     License: https://bootstrapmade.com/license/
   ======================================================= -->
-  <script>
 
-$('.strip').each(function(){
-  var $t = $(this),
-      rows = $.trim($t.html()).split('<br>');
-
-  $t.html('');
-
-  $.each(rows, function(i, val){
-    $('<span class="row"></span>').appendTo($t);
-
-    var letters = $.trim(val).split('');
-
-    $.each(letters, function(j, v){
-      v = (v == ' ') ? '&nbsp;' : v;
-      $('<span>' + $.trim(v) + '</span>').appendTo($('.row:last', $t));
-    });
-
-  });
-});
-
-$('body').click(function(){
-  for (i = 0; i < $('.strip span').length; i++) {
-    (function(ind) {
-      setTimeout(function(){
-          $('.strip span:not(".row")').eq(ind).toggleClass('animate');
-      }, ind * 15);
-    })(i);
-  }
-}).click();
-
-
-  </script>
 </head>
 
 <body>
@@ -108,11 +75,19 @@ $('body').click(function(){
                         <img src="img/logo1.jfif" width="200px" height="200px" style="border-radius:10px 10px;opacity:.8;box-shadow:0px 0px 10px #000;" align="left">
                     </div>
                     <div class="col-2">
-                        <h1 class="strip">
-                            Work hard<br>
-                            Do good<br>
-                            Be incredible
-                          <h1>
+                        <svg viewBox="0 0 960 300">
+                            <symbol id="s-text">
+                                <text text-anchor="middle" x="50%" y="80%">Montserrat</text>
+                            </symbol>
+                        
+                            <g class = "g-ants">
+                                <use xlink:href="#s-text" class="text-copy"></use>
+                                <use xlink:href="#s-text" class="text-copy"></use>
+                                <use xlink:href="#s-text" class="text-copy"></use>
+                                <use xlink:href="#s-text" class="text-copy"></use>
+                                <use xlink:href="#s-text" class="text-copy"></use>
+                            </g>
+                        </svg>
                     </div>
                 </div>
                 <div class="row">
